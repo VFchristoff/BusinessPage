@@ -5,28 +5,34 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(images\photo_5.jpg);
+    background-image: url('../BusinessPage/images/photo_5.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
 }
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 2%;
     justify-content: space-between;
     align-items: center;
 }
 
 nav img{
-    width: 150px;
+    width: 600px;
 }
 ;nav-links{
     flex: 1;
     text-align: right;
 }
-.nav-links{
+.nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 200px 200px;
     position: relative;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 100px;
+    font-family: 'Heebo', sans-serif;
 }
