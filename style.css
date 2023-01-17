@@ -46,4 +46,5 @@ nav img{
     margin: auto;
 }
 .nav-links ul li:hover::after{
-width: 100%;}
+width: 100%;
+}
