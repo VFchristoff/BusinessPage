@@ -32,19 +32,49 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: rgb(211, 202, 226);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 100px;
     font-family: 'Heebo', sans-serif;
 }
 .nav-links ul li::after{
     content:'';
-    width: 100%;
+    width: 0%;
     height:  8px;
-    background: rgb(211, 202, 226);
+    background: rgb(255, 255, 255);
     display: block;
     margin: auto;
+    transition: 0.5;
 }
 .nav-links ul li:hover::after{
 width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 500px;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 200px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor:  pointer;
 }
