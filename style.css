@@ -13,34 +13,35 @@
 }
 nav{
     display: flex;
-    padding: 2% 2%;
+    padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
 
 nav img{
-    width: 600px;
+    width: 150px;
 }
-;nav-links{
+
+.nav-links{
     flex: 1;
     text-align: right;
 }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 200px 200px;
+    padding: 8px 12px;
     position: relative;
 }
 .nav-links ul li a{
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 100px;
+    font-size: 13px;
     font-family: 'Heebo', sans-serif;
 }
 .nav-links ul li::after{
     content:'';
     width: 0%;
-    height:  8px;
+    height:  2px;
     background: rgb(255, 255, 255);
     display: block;
     margin: auto;
@@ -59,11 +60,11 @@ width: 100%;
     text-align: center;
 }
 .text-box h1 {
-    font-size: 500px;
+    font-size: 62px;
 }
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 200px;
+    font-size: 14px;
     color: #fff;
 }
 
