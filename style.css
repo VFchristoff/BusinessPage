@@ -185,7 +185,7 @@ h3 {
     padding-top: 50px;
 }
 
-.row-col {
+.location-col {
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -193,9 +193,11 @@ h3 {
     overflow: hidden;
 }
 
-.row-col img {
-    width: 100%;
-}
+.location-col img {
+    height: auto;
+    max-width: 35%;
+    position: center;
+  }
 .layer {
     background: transparent;
     height: 100%;
@@ -206,4 +208,11 @@ h3 {
 }
 .layer:hover{
     background: rgba(226,0,0,0,7);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;  
 }
