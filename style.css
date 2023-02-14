@@ -186,13 +186,13 @@ h3 {
         flex-direction: column;
     }
 }
-.campus{
+.location{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
-.campus-col{
+.location-col{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -200,7 +200,7 @@ h3 {
     overflow: hidden;
 }
 
-.campus-col img{
+.location-col img{
     width: 100%;
   }
 
@@ -214,7 +214,7 @@ h3 {
     transition: 1s;
 }
 
-.campus-col img:hover{
+.location-col img:hover{
     color:#8635d3;
     opacity: 50%;
 }
