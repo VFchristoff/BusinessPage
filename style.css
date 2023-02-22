@@ -12,6 +12,8 @@
     position: relative;
 }
 
+/*----- nav -----*/
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -20,7 +22,7 @@ nav{
 }
 
 nav img{
-    width: 150px;
+    width: 100px;
 }
 
 .nav-links{
@@ -99,6 +101,9 @@ nav img{
     transition: 1s;
     scale: 1.2 backwards;
 }
+nav .fa{
+    display: none;
+}
 
 @media(max-width: 700px){
     .text-box h1{
@@ -126,13 +131,14 @@ nav img{
         cursor: pointer;
     }
     .nav-links ul {
-        padding: 30px;
+        padding: 50px;
     }
     
 }
 
-/*-----JavaScript for Toggle Menu---*/
-.course {
+/*----- solutions -----*/
+
+.solutions {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -160,9 +166,9 @@ p{
     justify-content: space-between;
 }
 
-.course-col{
+.solutions-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #e5e6f8;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -176,7 +182,7 @@ h3 {
     margin: 10px 0;
 }
 
-.course-col:hover{
+.solutions-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0,2);
 }
 
@@ -186,6 +192,9 @@ h3 {
         flex-direction: column;
     }
 }
+
+/*----- location -----*/
+
 .location{
     width: 80%;
     margin: auto;
@@ -204,17 +213,72 @@ h3 {
     width: 100%;
   }
 
-.layer {
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 1s;
+.location p {
+    text-align: left;
 }
 
-.location-col img:hover{
-    color:#8635d3;
-    opacity: 50%;
+/*----- technologies -----*/
+.technologies{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.technologies-col{
+    flex-basis: 40%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.technologies-col img{
+    width: 800px; 
+    height:350px;
+    object-fit: cover;
+  }
+
+.technologies-col figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.technologies-col figure:hover img {
+	opacity: .5;
+}
+
+.technologies p{
+    text-align: left;
+}
+.technologies-col p {
+    text-align: left;
+}
+
+/*----- clients -----*/
+
+.clients {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.clients-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #e9f0e3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.clients-col img {
+    height: 160px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.company h4{
+    text-align: center;
+}
+.company p{
+    text-align: right;
 }
