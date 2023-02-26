@@ -3,6 +3,11 @@
     padding: 0;
     font-family: 'Heebo', sans-serif;
 }
+
+/*----------------------------*/
+/*----- page: main -----*/
+/*----------------------------*/
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -281,4 +286,91 @@ h3 {
 }
 .company p{
     text-align: right;
+}
+/*----------------------------*/
+/*----- page: our values -----*/
+/*----------------------------*/
+.sub-header{ 
+height: 50vh;
+width: 100%;
+background-image: linear-gradient(to bottom, rgba(12, 10, 36, 0.73), rgba(12, 10, 36, 0.73)), url('../BusinessPage/images/ourvalues/about.jpg');
+background-position: center;
+background-size: cover;
+position: relative;
+}
+.sub-header h1 {
+    font-size: 90px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 100px;
+}
+
+.sub-header img {
+    width: 30%; 
+    height:30%;
+    object-fit: cover;
+}
+
+.bg_history {
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.division {
+    background-color: rgba(12, 10, 36, 0.73);
+    height: 50px;
+}
+.division p {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+.timeline {
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+    grid-row: 5;
+    text-align: center;
+}
+
+.item1 {
+	scale: 2;
+}
+.item2-2 {
+    scale: 2;
+}
+.item3-3 {
+    scale: 2;
+}
+.item4-4 {
+    scale: 2;
+}
+.item5-5 {
+    scale: 2;
+}
+.text-box-1 {
+    display: flex;
+    width: auto;
+    max-width: 400px;
+    margin-bottom: 0;
+    margin-left: 100px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #4f4b61;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.92;
+}
+.text-box-1 h1 {
+    color: #ffffff;
+    opacity: 1;
+    font-size: 70px;
+    font-weight: 900;
+}
+.text-box-1 p {
+    color: #ffffff;
+    opacity: 1;
 }
