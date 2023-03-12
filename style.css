@@ -372,9 +372,28 @@ h3 {
 .grid-content-icon h2 {
     color: #303031;
 }
-
-/*-------------social-impact-------------*/
-
 /*-------------video-------------*/
 
+.social-impact-video{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+/*-------------social-impact-------------*/
+.social-impact {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    display: grid;
+    gap: 50px;
+    grid-template-areas:
+      "a b";
+    align-items: center;
+    text-align: center;
+}
 /*-------------footer-------------*/  
+.footer {
+    text-align: center;
+    padding: 30px;
+}
