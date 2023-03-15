@@ -265,15 +265,15 @@ h3 {
 /*----- clients -----*/
 
 .clients {
-    width: 80%;
+    width: 85%;
     margin: auto;
-    padding-top: 100px;
     text-align: center;
+    box-sizing: border-box;
 }
 .clients-col {
     flex-basis: 44%;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin: 2%;
     text-align: left;
     background: #e9f0e3;
     padding: 25px;
@@ -291,6 +291,16 @@ h3 {
 }
 .company p{
     text-align: right;
+}
+@media(max-width: 700px){
+    .clients-col img {
+        max-width: 8vh;
+        max-height: 8vh;
+    }
+    #client-row {
+        margin: 0;
+        margin-bottom: 5%;
+    }
 }
 /*----------------------------*/
 /*----- page: our values -----*/
@@ -358,6 +368,7 @@ h3 {
   padding-top: 10vh;
   padding-bottom: 5vh;
 }
+
 /*-------------core-principles-------------*/
 
 .grid-content img {
