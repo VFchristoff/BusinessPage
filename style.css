@@ -319,7 +319,7 @@ h3 {
     font-size: 90px;
     text-align: center;
     color: #ffffff;
-    margin-top: 100px;
+    padding: 10vh;
 }
 
 .sub-header img {
@@ -327,46 +327,87 @@ h3 {
     height:30%;
     object-fit: cover;
 }
+@media(max-width: 700px){
+    .sub-header h1 {
+        font-size: 40px;
+    }
+}
+    
 /*-------------about-us-------------*/
-.about-us{
-  display: grid;
-  gaP: 200px;
-  grid-template-areas:
-    "a a b";
-  align-items: center;
-  padding-left: 30vh;
-  padding-right: 30vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
-.about-text {
-    grid-area: a;
-    text-align: center;
-}
-.about-text p {
-    text-align: left;
-}
-.about-gif {
-    grid-area: b;
-}
 .section-title {
-    padding-top: 5%;
+    padding: 5vh;
     text-align: center;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+    column-gap: 20vh;
+    flex-direction: row;
+}
+
+.box-text {
+    text-align: center;
+    padding: 20px;
+    font-size: 150%;
+    max-width: 40vh;
+}
+.box-video {
+    zoom: 0.5;
 }
 
 .grid {
-  display: grid;
-  gap: 50px;
-  grid-template-areas:
-    "a b c"
-    "d e f"
-    "g h i";
-  align-items: center;
-  text-align: center;
-  padding-left: 30vh;
-  padding-right: 30vh;
-  padding-top: 10vh;
-  padding-bottom: 5vh;
+    display: grid;
+    gap: 50px;
+    grid-template-areas:
+      "a b c"
+      "d e f"
+      "g h i";
+    align-items: center;
+    text-align: center;
+    padding: 10vh;
+}
+.grid-content {
+    padding: 5vh;
+}
+@media(max-width: 1300px){
+
+    .grid {
+        padding: 0;
+        grid-template-columns:none;
+        grid-template-areas:
+        "a b"
+        "c d"
+        "e f"
+        "g h"
+        "i .";
+    }
+}
+@media(max-width: 700px){
+    .box-video {
+        zoom: 0.25;
+    }
+    .grid {
+        padding: 0;
+        grid-template-columns:none;
+        grid-template-areas:none;
+    }
+    #third-box {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+    #four-box {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;    
+    }
 }
 
 /*-------------core-principles-------------*/
@@ -391,18 +432,7 @@ h3 {
 }
 
 /*-------------social-impact-------------*/
-.social-impact {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 30vh;
-    padding-right: 30vh;
-    display: grid;
-    gap: 50px;
-    grid-template-areas:
-      "a b";
-    align-items: center;
-    text-align: center;
-}
+
 /*-------------footer-------------*/  
 .footer {
     text-align: center;
