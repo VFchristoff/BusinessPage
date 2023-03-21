@@ -480,6 +480,9 @@ h3 {
     .location iframe {
         zoom: 0.4;
     }
+    .gallery {
+        scale: 0.45;
+    }
 }
 /*-------------contact-------------*/
 .contact-us {
