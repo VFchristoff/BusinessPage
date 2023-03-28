@@ -31,12 +31,9 @@ nav{
     align-items: center;
 }
 
-nav img{
-    width: 100px;
-}
 
 .nav-links{
-    flex: 1;
+    display: flex;
     text-align: right;
 }
 
@@ -66,6 +63,9 @@ nav img{
 
 .nav-links ul li:hover::after{
     width: 100%;
+}
+.Link-toggle {
+    display: none;
 }
 .text-box{
     width: 90%;
