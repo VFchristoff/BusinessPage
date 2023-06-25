@@ -22,10 +22,7 @@
                     <li class="nav-item"><a href="partners.html">PARTNERS</a></li>
                     <li class="nav-item"><a href="contact.html">CONTACT US</a></li>
                 </ul>
-            </div>
-            <div class="Link-toggle">
-                <i class="fas fa-bars"></i>
-            </div>          
+            </div>        
             <div class = "hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -37,7 +34,12 @@
 <div class="text-box">
             <h1> Leading in Tech</h1>
             <p> We are the future of the semiconductor industry. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
-            <a href="" class="hero-btn"> Contact us if you want to be part of something big </a>
+            <button id="contact-redirect" class="hero-btn"> Contact us if you want to be part of something big </button>
+            <script type="text/javascript">
+                document.getElementById("contact-redirect").onclick = function () {
+                    location.href = "contact.html";
+                };
+            </script>
 </div>
 
 <!-----Solutions---->
@@ -66,7 +68,7 @@
 <!-----Locations---->
 <section class="location">
     <h1> Headquarters </h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <p> Our company operates from three strategically located headquarters, each focusing on specific technological domains. With cutting-edge expertise in nanomaterials, solar panels, microprocessors, and nano-based clinical trials, we are at the forefront of technological advancements. Our headquarters are equipped with state-of-the-art facilities and a dedicated team of experts, working tirelessly to drive innovation and deliver groundbreaking solutions. We pride ourselves on our commitment to excellence and the pursuit of scientific breakthroughs that positively impact industries and communities worldwide. Join us on this exciting journey as we shape the future of technology through our headquarters' pioneering efforts. </p>
     <div class="row">
         <div class="location-col">
             <h3> London </h3>
@@ -84,7 +86,8 @@
 </section>
 <section class="technologies">
     <h1> Our Technologies </h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <p> At our company, we have established headquarters in three strategic locations, and our focus lies in pioneering cutting-edge technologies that have redefined industries. Our expertise spans across nanomaterials, solar panels, microprocessors, and nano-based clinical trials. With nanotechnology as our driving force, we engineer materials at the nanoscale, unlocking extraordinary properties that revolutionize electronics, healthcare, energy, and more. In the realm of renewable energy, we lead the way in designing and manufacturing state-of-the-art solar panels that efficiently convert sunlight into clean electricity. Our mastery of microprocessors enables us to develop high-performance computing components that power a diverse range of devices. Additionally, we leverage nanotechnology to enhance clinical trials, employing nanoscale drug delivery systems, diagnostic tools, and therapeutic approaches to optimize treatment efficacy and transform healthcare outcomes. Through our unwavering commitment to technological advancement, we are shaping a brighter future, fueled by nanomaterials, solar panels, microprocessors, and innovative nano-based clinical trials.
+    </p>
 <div class="row">
     <div class="technologies-col">
         <h3> Nanomaterials </h3>
@@ -171,17 +174,28 @@
     <h4>Aurora Propulsion Technologies</h4>
     <p>Aurora is a tech company founded in 1999, and is headed up by CEO and co-founder. All rights reserved.Address: 34 Wolf Pond Rd, Wurtsboro, New York 12790, USA. </p>
     <div class="icons">
-        <i class="fa fa-facebook" style="padding: 10px;"></i>
-        <i class="fa fa-twitter" style="padding: 10px;"></i>
-        <i class="fa fa-instagram" style="padding: 10px;"></i>
-        <i class="fa fa-linkedin" style="padding: 10px;"></i>
+        <i id="js-fb" class="fa fa-facebook" style="padding: 10px;"></i>
+        <i id="js-tw" class="fa fa-twitter" style="padding: 10px;"></i>
+        <i id="js-in" class="fa fa-instagram" style="padding: 10px;"></i>
+        <i id="js-li" class="fa fa-linkedin" style="padding: 10px;"></i>
     </div>
 </section>
 <!----- Footer ---->
 
-<!-----JavaScript for Toggle Menu---->
-
-<!-----JavaScript for Toggle Menu---->
+<script type="text/javascript">
+    document.getElementById("js-fb").onclick = function () {
+        location.href = "https://www.facebook.com/";
+    };
+    document.getElementById("js-tw").onclick = function () {
+        location.href = "https://twitter.com/";
+    };
+    document.getElementById("js-in").onclick = function () {
+        location.href = "https://www.instagram.com/";
+    };
+    document.getElementById("js-li").onclick = function () {
+        location.href = "https://www.linkedin.com/";
+    };
+</script>
 
 </body>
 </html>

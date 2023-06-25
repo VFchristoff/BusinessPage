@@ -259,15 +259,26 @@
     <h4>Aurora Propulsion Technologies</h4>
     <p>Aurora is a tech company founded in 1999, and is headed up by CEO and co-founder. All rights reserved.Address: 34 Wolf Pond Rd, Wurtsboro, New York 12790, USA. </p>
     <div class="icons">
-        <i class="fa fa-facebook" style="padding: 10px;"></i>
-        <i class="fa fa-twitter" style="padding: 10px;"></i>
-        <i class="fa fa-instagram" style="padding: 10px;"></i>
-        <i class="fa fa-linkedin" style="padding: 10px;"></i>
+        <i id="js-fb" class="fa fa-facebook" style="padding: 10px;"></i>
+        <i id="js-tw" class="fa fa-twitter" style="padding: 10px;"></i>
+        <i id="js-in" class="fa fa-instagram" style="padding: 10px;"></i>
+        <i id="js-li" class="fa fa-linkedin" style="padding: 10px;"></i>
     </div>
 </section>
-
 <!----- Footer ---->
-
-
+<script type="text/javascript">
+    document.getElementById("js-fb").onclick = function () {
+        location.href = "https://www.facebook.com/";
+    };
+    document.getElementById("js-tw").onclick = function () {
+        location.href = "https://twitter.com/";
+    };
+    document.getElementById("js-in").onclick = function () {
+        location.href = "https://www.instagram.com/";
+    };
+    document.getElementById("js-li").onclick = function () {
+        location.href = "https://www.linkedin.com/";
+    };
+</script>
 </body>
 </html>
