@@ -113,37 +113,50 @@ nav{
 }
 nav .fa{
     display: none;
+    cursor:  pointer;
 }
-
-@media(max-width: 700px){
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin:  5px auto;
+}
+.hamburger {
+    display: none;
+}
+@media(max-width: 768px){
     .text-box h1{
         font-size: 20px;
     }
-    .nav-links ul li {
+    .hamburger {
         display: block;
+    }  
+    .hamburger.active .bar:nth-child(2)  {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1)  {
+        transform: translate(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3)  {
+        transform: translate(-8px) rotate(-45deg);
     }
     .nav-links {
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
+        position: fixed;
+        background-color: #f44336;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
     }
-    nav .fa {
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
+    .nav-item {
+        margin: 16px 0;
     }
-    .nav-links ul {
-        padding: 50px;
+    .nav-links.active {
+        left: 0;
     }
-    
 }
 
 /*----- solutions -----*/
