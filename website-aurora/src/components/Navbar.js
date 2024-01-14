@@ -67,23 +67,27 @@ const Navbar = () => {
                 <div className={`text-stone-200 lg:flex lg:items-center lg:w-auto ${isMobile ? 'block' : 'hidden'}`}>
                     <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
                         <li>
-                            <button className="nav-link transform transition-transform hover:scale-105" onClick={() => navigateToSection('#aurora')}>
-                                AURORA
+                            <button className="nav-link relative group" onClick={() => navigateToSection('#aurora')}>
+                                <span>AURORA</span>
+                                <span className="nav-link-underline absolute bottom-0 left-0 right-0 h-1 bg-transparent transition group-hover:bg-white" />
                             </button>
                         </li>
                         <li>
-                            <button className="nav-link transform transition-transform hover:scale-105" onClick={() => navigateToSection('#values')}>
-                                OUR VALUES
+                            <button className="nav-link relative group" onClick={() => navigateToSection('#values')}>
+                                <span>OUR VALUES</span>
+                                <span className="nav-link-underline absolute bottom-0 left-0 right-0 h-1 bg-transparent transition group-hover:bg-white" />
                             </button>
                         </li>
                         <li>
-                            <button className="nav-link transform transition-transform hover:scale-105" onClick={() => navigateToSection('#partners')}>
-                                PARTNERS
+                            <button className="nav-link relative group" onClick={() => navigateToSection('#partners')}>
+                                <span>PARTNERS</span>
+                                <span className="nav-link-underline absolute bottom-0 left-0 right-0 h-1 bg-transparent transition group-hover:bg-white" />
                             </button>
                         </li>
                         <li>
-                            <button className="nav-link transform transition-transform hover:scale-105" onClick={() => navigateToSection('#contact')}>
-                                CONTACT US
+                            <button className="nav-link relative group" onClick={() => navigateToSection('#contact')}>
+                                <span>CONTACT US</span>
+                                <span className="nav-link-underline absolute bottom-0 left-0 right-0 h-1 bg-transparent transition group-hover:bg-white" />
                             </button>
                         </li>
                     </ul>

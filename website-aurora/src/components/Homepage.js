@@ -1,6 +1,7 @@
 // components/Homepage.js
 
 import React from 'react';
+import Navbar from "./Navbar";
 
 const Homepage = () => {
     return (
@@ -8,6 +9,7 @@ const Homepage = () => {
             backgroundImage: `linear-gradient(to bottom, rgba(12, 10, 36, 0.73), rgba(12, 10, 36, 0.73)), url(${require('../images/front-page/main/photo_5.webp')})`,
             minHeight: '800px',
         }}>
+            <Navbar />
             <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
                     <h2 className="font-heebo-sans text-6xl drop-shadow-md">Leading in Tech</h2>

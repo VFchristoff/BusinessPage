@@ -7,49 +7,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes: {
-        shimmer: {
-          '0%%': {
-            transform: 'translateY(-20%)',
-          },
-          '50%': {
-            transform: 'translateY(20%)',
-          },
-          '100%': {
-            transform: 'translateY(0%)',
-          },
-        },
-        reverseShimmer: {
-          '0%': {
-            transform: 'translateY(20%)',
-          },
-          '50%': {
-            transform: 'translateY(-20%)',
-          },
-          '100%': {
-            transform: 'translateY(0%)',
-          },
-        },
-        'bounce-custom': {
-          '0%, 100%': {
-            transform: 'translateY(5%)',
-            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
-          },
-          '50%': {
-            transform: 'translateY(0)',
-            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
-          },
-        },
-        'bounce-custom-2': {
-          '0%, 100%': {
-            transform: 'translateY(50%)',
-            animationTimingFunction: 'cubic-bezier(0, 0, 1, 1)',
-          },
-          '50%': {
-            transform: 'translateY(0)',
-            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
-          },
-        },
+      underlineOffset: {
+        '2': '2px',
       },
       animation: {
         'bounce-custom': 'bounce-custom 5s infinite',
@@ -80,4 +39,7 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
