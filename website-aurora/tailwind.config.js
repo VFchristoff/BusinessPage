@@ -74,6 +74,10 @@ module.exports = {
       textColor: {
         'custom-color': '#242235',
       },
+      fontFamily: {
+        heebo: ['Heebo', 'sans-serif'],
+
+      },
     },
   },
 };
