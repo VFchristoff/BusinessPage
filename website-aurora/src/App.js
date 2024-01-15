@@ -18,8 +18,23 @@ const imageUrlsContent = [
     require('./images/front-page/locations/location1.jpeg'),
     require('./images/front-page/locations/location2.jpeg'),
     require('./images/front-page/locations/location3.jpeg'),
+    require('./images/front-page/locations/location3.jpeg'),
 ];
 
+const titleContentTech = ['Nanomaterials', 'Solar Panels', 'Microprocessors', 'Nano-based Clinical Trials'];
+const imageUrlsTechContent = [
+    require('./images/front-page/tech/1.webp'),
+    require('./images/front-page/tech/2.webp'),
+    require('./images/front-page/tech/3.webp'),
+    require('./images/front-page/tech/4.webp'),
+];
+
+const descriptionTechContent = [
+    'We use nanomaterials in healthcare research and development to make tools that get inside tissues and organs to better understand and treat disease. Here, nanoparticles can enter tissues without direct injection, making them the ideal tool to investigate the inner workings of diseased organs.',
+    'Solar Panels have become increasingly popular over the past few years due to their environmental and economical benefits. We offer offer a low-cost method for solar power development. Solar Energy systems offer the possibility for various applications such as: electricity, transportation and heating and cooling.',
+    'Microprocessors from Intel and Altera have been used to fabricate a MEMS device. The endoscopic probe, for example, contains MEMS microelectronics (diodes, capacitors, resistors and radio transmitters) and would take advantage of MEMS logic in the device’s field-programmable gate array (FPGA) to perform its function. Wafer-level components have also been used as microelectromechanical systems (MEMS) sensors, even in displays.',
+    'Aurora, the market leader in Clinical Trials technology and services, announced today a strategic collaboration with Brainstorm, Inc., a global leader in adaptive computer-based testing and data analytics software. Aurora\'s unique capacity to manage standardized set of IT operations for both researchers and clinical trial sponsors is being leveraged to support Brainstorm\'s automated workflow-optimized clinical trials technology, which serves the global clinical trials industry.'
+];
 const App = () => {
   return (
       <div>
@@ -35,17 +50,18 @@ const App = () => {
             title="Headquarters"
             description="Our company operates from three strategically located headquarters, each focusing on specific technological domains. With cutting-edge expertise in nanomaterials, solar panels, microprocessors, and nano-based clinical trials, we are at the forefront of technological advancements. Our headquarters are equipped with state-of-the-art facilities and a dedicated team of experts, working tirelessly to drive innovation and deliver groundbreaking solutions. We pride ourselves on our commitment to excellence and the pursuit of scientific breakthroughs that positively impact industries and communities worldwide. Join us on this exciting journey as we shape the future of technology through our headquarters' pioneering efforts."
         />
-      <DynamicColumnsBox_Image title={titleContentHeadquarters} imageUrls={imageUrlsContent} />
+      <DynamicColumnsBox_Image title={titleContentHeadquarters} imageUrls={imageUrlsContent} description={''} />
       <About
         id="tech"
         title="Our Technologies"
         description="At our company, we have established headquarters in three strategic locations, and our focus lies in pioneering cutting-edge technologies that have redefined industries. Our expertise spans across nanomaterials, solar panels, microprocessors, and nano-based clinical trials. With nanotechnology as our driving force, we engineer materials at the nanoscale, unlocking extraordinary properties that revolutionize electronics, healthcare, energy, and more. In the realm of renewable energy, we lead the way in designing and manufacturing state-of-the-art solar panels that efficiently convert sunlight into clean electricity. Our mastery of microprocessors enables us to develop high-performance computing components that power a diverse range of devices. Additionally, we leverage nanotechnology to enhance clinical trials, employing nanoscale drug delivery systems, diagnostic tools, and therapeutic approaches to optimize treatment efficacy and transform healthcare outcomes. Through our unwavering commitment to technological advancement, we are shaping a brighter future, fueled by nanomaterials, solar panels, microprocessors, and innovative nano-based clinical trials."
         />
-        <About
-            id="clients"
-            title="What our clients says"
-            description="We work with many companies and not every company uses the standards of quality workmanship and amenities. We only choose those that really strive to meet our requirements. They are our highest quality."
-        />
+          <DynamicColumnsBox_Image title={titleContentTech} imageUrls={imageUrlsTechContent} description={descriptionTechContent} imageWidth={120} />
+      <About
+        id="clients"
+        title="What our clients says"
+        description="We work with many companies and not every company uses the standards of quality workmanship and amenities. We only choose those that really strive to meet our requirements. They are our highest quality."
+      />
       </div>
   );
 };
