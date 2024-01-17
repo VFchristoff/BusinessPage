@@ -5,6 +5,7 @@ import Homepage from './components/Homepage';
 import About from './components/About';
 import DynamicColumnsBox from "./components/DynamicColumnsBox";
 import DynamicColumnsBox_Image from "./components/DynamicColumnsBox_Image";
+import Footer from "./components/Footer";
 
 const titleContentSolutions = ['Finance', 'Health Industry', 'Tech Corporations'];
 const descriptionContent = [
@@ -62,6 +63,7 @@ const App = () => {
         title="What our clients says"
         description="We work with many companies and not every company uses the standards of quality workmanship and amenities. We only choose those that really strive to meet our requirements. They are our highest quality."
       />
+      <Footer/>
       </div>
   );
 };
