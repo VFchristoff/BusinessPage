@@ -37,6 +37,26 @@ const descriptionTechContent = [
     'Microprocessors from Intel and Altera have been used to fabricate a MEMS device. The endoscopic probe, for example, contains MEMS microelectronics (diodes, capacitors, resistors and radio transmitters) and would take advantage of MEMS logic in the device’s field-programmable gate array (FPGA) to perform its function. Wafer-level components have also been used as microelectromechanical systems (MEMS) sensors, even in displays.',
     'Aurora, the market leader in Clinical Trials technology and services, announced today a strategic collaboration with Brainstorm, Inc., a global leader in adaptive computer-based testing and data analytics software. Aurora\'s unique capacity to manage standardized set of IT operations for both researchers and clinical trial sponsors is being leveraged to support Brainstorm\'s automated workflow-optimized clinical trials technology, which serves the global clinical trials industry.'
 ];
+const clientName = ['Bill Gates', 'Makenzie Castillo', 'Priscila Brandt', 'Eva Winters  '];
+const clientDescription = [
+    'Aurora changes our company in a whole new way, and it helps us realize how many simple things are working so well that we didn\'t notice before. Together, we made a strategy for how nanotechnology will be developed within this important, challenging, and relatively new arena.',
+    'They held various symposiums to expose and engage stakeholders in developing nanotechnology products, as well as advanced methods to realize advanced technologies.',
+    'By creating a network of nanotechnology infrastructure platforms, Aurora enabled the creation of a multitude of advanced technologies through smart, scalable, and secure infrastructure in our company.',
+    'Aurora has given me the opportunity to learn, and the network to embark on new ventures, making me and the company stronger and better in the process.'
+];
+const clientCompany = [
+    'Microsoft Corporation, 2019',
+    'Tencent Holdings, 2015',
+    'Alphabet Inc, 2020',
+    'F. Hoffmann-La Roche Ltd, 2022'
+];
+const clientImageUrls = [
+    require("https://www.thesoftwarereport.com/wp-content/uploads/2019/02/birlasoft-300x300.jpg"),
+    require("https://www.thesoftwarereport.com/wp-content/uploads/2019/02/birlasoft-300x300.jpg"),
+    require("https://www.thesoftwarereport.com/wp-content/uploads/2019/02/birlasoft-300x300.jpg"),
+    require("https://www.thesoftwarereport.com/wp-content/uploads/2019/02/birlasoft-300x300.jpg"),
+];
+
 const App = () => {
   return (
       <div>
@@ -64,7 +84,7 @@ const App = () => {
         title="What our clients says"
         description="We work with many companies and not every company uses the standards of quality workmanship and amenities. We only choose those that really strive to meet our requirements. They are our highest quality."
       />
-      <Clients/>
+      <Clients clientName={clientName} clientDescription={clientDescription} clientCompany={clientCompany} clientImageUrls={clientImageUrls} />
       <Footer/>
       </div>
   );
