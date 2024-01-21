@@ -51,10 +51,10 @@ const clientCompany = [
     'F. Hoffmann-La Roche Ltd, 2022'
 ];
 const clientImageUrls = [
-    require("https://www.thesoftwarereport.com/wp-content/uploads/2019/02/birlasoft-300x300.jpg"),
-    require("https://www.thesoftwarereport.com/wp-content/uploads/2019/02/birlasoft-300x300.jpg"),
-    require("https://www.thesoftwarereport.com/wp-content/uploads/2019/02/birlasoft-300x300.jpg"),
-    require("https://www.thesoftwarereport.com/wp-content/uploads/2019/02/birlasoft-300x300.jpg"),
+    require("./images/front-page/clients/1.webp"),
+    require("./images/front-page/clients/2.jpg"),
+    require("./images/front-page/clients/3.jpg"),
+    require("./images/front-page/clients/4.jpg"),
 ];
 
 const App = () => {
