@@ -5,6 +5,7 @@ import Homepage from './components/Homepage';
 import About from './components/About';
 import DynamicColumnsBox from "./components/DynamicColumnsBox";
 import DynamicColumnsBox_Image from "./components/DynamicColumnsBox_Image";
+import DynamicColumnsBox_Image_2 from "./components/DynamicColumnsBox_Image_2";
 import Footer from "./components/Footer";
 import Clients from "./components/Clients";
 
@@ -78,7 +79,7 @@ const App = () => {
         title="Our Technologies"
         description="At our company, we have established headquarters in three strategic locations, and our focus lies in pioneering cutting-edge technologies that have redefined industries. Our expertise spans across nanomaterials, solar panels, microprocessors, and nano-based clinical trials. With nanotechnology as our driving force, we engineer materials at the nanoscale, unlocking extraordinary properties that revolutionize electronics, healthcare, energy, and more. In the realm of renewable energy, we lead the way in designing and manufacturing state-of-the-art solar panels that efficiently convert sunlight into clean electricity. Our mastery of microprocessors enables us to develop high-performance computing components that power a diverse range of devices. Additionally, we leverage nanotechnology to enhance clinical trials, employing nanoscale drug delivery systems, diagnostic tools, and therapeutic approaches to optimize treatment efficacy and transform healthcare outcomes. Through our unwavering commitment to technological advancement, we are shaping a brighter future, fueled by nanomaterials, solar panels, microprocessors, and innovative nano-based clinical trials."
         />
-          <DynamicColumnsBox_Image title={titleContentTech} imageUrls={imageUrlsTechContent} description={descriptionTechContent} imageWidth={120} />
+          <DynamicColumnsBox_Image_2 title={titleContentTech} imageUrls={imageUrlsTechContent} description={descriptionTechContent} imageWidth={120} />
       <About
         id="clients"
         title="What our clients says"
