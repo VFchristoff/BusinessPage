@@ -6,7 +6,7 @@ const Clients = ({ clientImageUrls, clientDescription, clientName, clientCompany
             {clientName.map((_, index) => (
                 <div
                     key={index}
-                    className={`w-full p-4 bg-blue-100 rounded-lg transition duration-500 ease-in-out transform hover:scale-105 ${
+                    className={`w-full p-4 bg-slate-200 rounded-lg transition duration-500 ease-in-out transform hover:scale-105 ${
                         index % 2 === 0 ? 'sm:mr-2 md:mr-4 lg:mr-6 xl:mr-8 2xl:mr-10 mb-10' : 'sm:ml-2 md:ml-4 lg:ml-6 xl:ml-8 2xl:ml-10 mb-10'
                     }`}
                 >

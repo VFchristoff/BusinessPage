@@ -4,7 +4,7 @@ const Navbar = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     const handleMobileMenu = () => {
-        setIsMobile(!isMobile);
+        setIsMobile(!isMobile); 
     };
 
     const navigateToSection = (path) => {
@@ -22,7 +22,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="lg:mx-0 lg:px-40 inset-x-0 flex flex-col lg:flex-row items-center justify-between p-6 z-40 sticky top-0">
+        <nav className="lg:mx-0 lg:px-40 inset-x-0 flex flex-col lg:flex-row items-center justify-between bg-slate-950 p-2 z-40 sticky top-0">
             <div className="container mx-5 lg:mx-auto flex items-center justify-between w-full">
                 <button onClick={() => navigateToSection('#page-top')} aria-label="Go to top">
                     <img src={require('../images/UI/logo.png')} alt="Logo" width={202} height={202} />
