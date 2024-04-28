@@ -6,7 +6,7 @@ const DynamicColumnsBox = ({ title, description }) => {
             {title.map((_, index) => (
                 <div
                     key={index}
-                    className={`w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 bg-blue-100 rounded-lg transition duration-500 ease-in-out transform hover:scale-105 mb-4 ${
+                    className={`w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 bg-slate-200 rounded-lg transition duration-500 ease-in-out transform hover:scale-105 mb-4 ${
                         index === 0 ? 'sm:ml-4 md:ml-8 lg:ml-12 xl:ml-16 2xl:ml-20' : index === title.length - 1 ? 'sm:mr-4 md:mr-8 lg:mr-12 xl:mr-16 2xl:mr-20' : 'sm:mx-2 md:mx-4 lg:mx-6 xl:mx-8 2xl:mx-10'
                     }`}
                 >
